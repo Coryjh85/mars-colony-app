@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EncountersComponent implements OnInit {
 
+interval;
  message = 'Hello';
  listOfMessages = [
    'Hello',
@@ -16,15 +17,17 @@ export class EncountersComponent implements OnInit {
    'Hey'
  ];  
   
-  constructor() { }
 
   ngOnInit() {
-   setInterval(() => {
+  this.interval = setInterval(() => {
     let index = Math.floor(Math.random() * this.listOfMessages.length);
     this.message = this.listOfMessages[index];
     this.listOfMessages.push('New Message');
-
     }, 1000);  
 }
 
+stopTheMadness(e){
+  e.preventDefault();
+  clearInterval(this.interval); 
+  }
 }
