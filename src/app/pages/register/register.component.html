@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1> Register </h1>
+<form >
+ <input type="text" name="name" placeholder="Name" />
+<br>
+ <input type="text" name="age" placeholder="Age" />
+<br>
+<select required="" name="occupation" ng-model="colonist.job_id" ng-class="{ placeholder: !colonist.job_id }" class="ng-pristine ng-empty ng-invalid ng-invalid-required placeholder ng-touched"><option value="" class="placeholder">Select occupation</option><!-- ngRepeat: job in jobs -->
+  <option value="1" ng-repeat="job in jobs" class="ng-binding ng-scope">Alien Hunter</option>
+  <option value="2" ng-repeat="job in jobs" class="ng-binding ng-scope">Yoga Teacher</option>
+  <option value="3" ng-repeat="job in jobs" class="ng-binding ng-scope">Dust Farmer</option>
+  <option value="4" ng-repeat="job in jobs" class="ng-binding ng-scope">Front-End Developer</option>
+</select>
+<br>
+<button class="button" ng-click="enter($event)">Check in</button>
+</form>
+</body>
+</html>
