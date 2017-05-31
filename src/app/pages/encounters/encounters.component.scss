@@ -2,6 +2,10 @@ body,html{
   width:100vw;
 }
 
+.encounters-list{
+  top:0px;
+  background-attachment: bottom;
+}
 
 h1{
   color:red;
@@ -9,7 +13,11 @@ h1{
   padding:40px;
   font-family:"space_ageregular"
 }
-body{
+.background{
   color:white;
-  background:black;
+
+  background:url("../../../assets/images/encounter.jpg") no-repeat;
+}
+ul{
+  background: rgba(0, 0, 0, 0.4)
 }

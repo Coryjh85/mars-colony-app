@@ -14,13 +14,12 @@
  <input type="text" name="age" placeholder="Age" />
 <br>
 <select required="" name="occupation" ng-model="colonist.job_id" ng-class="{ placeholder: !colonist.job_id }" class="ng-pristine ng-empty ng-invalid ng-invalid-required placeholder ng-touched"><option value="" class="placeholder">Select occupation</option><!-- ngRepeat: job in jobs -->
-  <option value="1" ng-repeat="job in jobs" class="ng-binding ng-scope">Alien Hunter</option>
-  <option value="2" ng-repeat="job in jobs" class="ng-binding ng-scope">Yoga Teacher</option>
-  <option value="3" ng-repeat="job in jobs" class="ng-binding ng-scope">Dust Farmer</option>
-  <option value="4" ng-repeat="job in jobs" class="ng-binding ng-scope">Front-End Developer</option>
+  <option *ngFor="let job of jobs">
+    {{job.name}} </option>
 </select>
 <br>
 <button class="button" ng-click="enter($event)">Check in</button>
 </form>
+<div class="colonistPic"> </div>
 </body>
 </html>

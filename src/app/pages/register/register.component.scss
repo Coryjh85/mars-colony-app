@@ -1,16 +1,29 @@
 body,html{
   width:100vw;
   height:100vh;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  background:black;
 }
 
 
 h1{  
+  margin:0 auto;
   text-decoration: underline;
   color:red;
-  padding:40px;
+  padding-top:60px;
   font-family:"space_ageregular"
 }
-body{
-  color:white;
-  background:black;
+
+.colonistPic{
+  margin:0 auto;
+  height:300px;
+  width:500px;
+  background:url("../../../assets/images/colonist.jpg")
+
+}
+
+form{
+  margin:100px auto;
 }
