@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-
 <body>
-  <h1> Register </h1>
-  <form>
-    <input [(ngModel)]='colonistName' type="text" name="name" placeholder="Name" />
-    <br>
-    <input [(ngModel)]='colonistAge' type="text" name="age" placeholder="Age" />
-    <br>
-    <select [(ngModel)]='colonistJobId' name="occupation"> 
-   <option  value="no job" class="placeholder">
-    Select occupation
-   </option>
-   <option *ngFor="let job of jobs" value="{{job.id}}">
-    {{job.name}} </option>
-</select>
-    <br>
-    <button class="button" (click)="postColonist()">Check in</button>
-  </form>
-  <div class="colonistPic"> </div>
-</body>
+<h1>Report Encounter</h1>
+<h3>Safety on Mars is Your Responsibilty</h3>
 
-</html>
+  <form class="register-form" [formGroup]="registerForm" (ngSubmit)>
+    <fieldset>
+      <input type="text" placeholder="Enter your name" required formControlName="name"/>
+        <br>
+      <input type="number" placeholder="Enter your age" required formControlName="age"/>
+        <br>
+      <select required formControlName="job_id">
+        <option [value]="NO_JOB_SELECTED">Select an occupation</option>
+        <option *ngFor="let job of jobs" [value]="job.id">{{job.name}}</option>
+      </select>
+    </fieldset>
+    <button type="submit">Register</button>
+  </form>
+  <div class="colonistPic"></div>
+</body>
+</html> 

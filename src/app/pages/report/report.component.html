@@ -1,21 +1,26 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+ 
+  <title>Report an Encounter</title>
 </head>
-<body>
-  <form class="register-form">
-    <fieldset>
-      <input type="text" placeholder="Enter your name" required/>
-      <input type="number" placeholder="Enter your age" required/>
-      <select required>
-        <option value="1">Select an occupation</option>
-      </select>
-    </fieldset>
-    <button type="submit">Register</button>
-  </form>
-</body>
-</html> 
+  <body>
+  <h1>Report Encounter</h1>
+
+ <h3>Safety on Mars is your Responsibility</h3>
+  
+  <form>
+     <select>
+       <option class="placeholder">Select Alien Type</option>
+       <option *ngFor="let alien of aliens">
+       {{alien.type}}</option>
+     </select>
+   <br>
+     <textarea type="text" name="action" placeholder="Action Taken" id rows="10">
+     <button> Submit Report</button>
+ 
+    </form>
+  </body>
+</html>-->
