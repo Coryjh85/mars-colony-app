@@ -1,23 +1,32 @@
 body,html{
-  width:100vw;
+  width:650px;
+  background: black;
 }
 
-.encounters-list{
-  top:0px;
-  background-attachment: bottom;
-}
+
 
 h1{
+  margin:0 auto;
+  width:650px;
+  background:black;
   color:red;
   text-decoration: underline;
-  padding:40px;
-  font-family:"space_ageregular"
+  padding:40px 20px;
+  font-family:"space_ageregular";
+  position:fixed;
 }
-.background{
-  color:white;
 
-  background:url("../../../assets/images/encounter.jpg") no-repeat;
-}
 ul{
-  background: rgba(0, 0, 0, 0.4)
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),
+              url("../../../assets/images/encounter.jpg") center right no-repeat fixed;
+  width:650px;
+  color:white;
+  padding-top:130px;
+  list-style-type: none;
+}
+
+.report-button{
+  bottom:0px;
+  background:black;
+  z-index: 9999;
 }

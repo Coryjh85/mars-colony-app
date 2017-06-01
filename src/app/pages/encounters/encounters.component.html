@@ -7,14 +7,12 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="background">
   <h1>
     Recent Encounters
   </h1>
 
 {{ message }}
-<div class="encounters-list">
-  </div>
+
 <ul>
   <li *ngFor="let encounter of encounters">
      {{encounter.date}}, {{encounter.colonist}}, {{encounter.atype}}, {{encounter.action}}</li>
@@ -25,6 +23,5 @@
 <h1 class="report-button">
   Report Encounter
 </h1>
-  </div>
 </body>
 </html>
