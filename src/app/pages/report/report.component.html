@@ -7,22 +7,15 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>
-  Report Encounter
-</h1>
-<h3>Safety on Mars is your Responsibility</h3>
-
-<form>
-<select [(ngModel)]='alienType' >
-  <option class="placeholder">Select Alien Type</option>
-  <option *ngFor="let alien of aliens"  value="{{alien.atype}}">
-     {{alien.type}}</option>
-
-</select>
-<br>
-<textarea type="text" [(ngModel)]="reportAction" name="action" placeholder="Action Taken" id rows="10">
-</textarea>
-<button class="button" (click)="postAlien()">Submit Report</button>
-</form>
+  <form class="register-form" #registerForm="ngform">
+    <fieldset>
+      <input type="text" placeholder="Enter your name" required/>
+      <input type="number" placeholder="Enter your age" required/>
+      <select required>
+        <option value="1">Select an occupation</option>
+      </select>
+    </fieldset>
+    <button type="submit">Register</button>
+  </form>
 </body>
-</html>
+</html> 
