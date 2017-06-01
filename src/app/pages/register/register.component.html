@@ -10,7 +10,7 @@
 <h1>Report Encounter</h1>
 <h3>Safety on Mars is Your Responsibilty</h3>
 
-  <form class="register-form" [formGroup]="registerForm" (ngSubmit)>
+  <form class="register-form" [formGroup]="registerForm" (ngSubmit)="register($event)">
     <fieldset>
       <input type="text" placeholder="Enter your name" required formControlName="name"/>
         <br>
@@ -21,7 +21,7 @@
         <option *ngFor="let job of jobs" [value]="job.id">{{job.name}}</option>
       </select>
     </fieldset>
-    <button type="submit">Register</button>
+    <button type="submit" [disabled]="registerForm.invalid">Register</button>
   </form>
   <div class="colonistPic"></div>
 </body>
