@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { Http, Headers, RequestOptions, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
@@ -11,6 +11,18 @@ export class EncountersService {
   private ENCOUNTERS_URL = 'https://red-wdp-api.herokuapp.com/api/mars/encounters';
 
   constructor(private http: Http) { }
+
+  postData(encounter: Encounter){
+    const headers = new Headers({'Content-Type': 'application/json'});
+    const options = new RequestOptions({ headers });
+    return this.http.post(this.ENCOUNTERS_URL, {encounter}, options)
+               .map(this.extractData);
+  }
+
+  extractData(res: Response){
+    const encounter = res.json();
+    return encounter;
+  }
 
   getData() {
      return this.http.get(this.ENCOUNTERS_URL)

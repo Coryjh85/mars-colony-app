@@ -39,7 +39,10 @@ export class RegisterComponent implements OnInit {
   jobs: Job[] = [];
   NO_JOB_SELECTED = '(none)';
 
-  constructor(private router: Router, private jobService: JobsService, private colonistService: ColonistService, private formBuilder: FormBuilder) {}
+  constructor(private router: Router,
+              private jobService: JobsService,
+              private colonistService: ColonistService,
+              private formBuilder: FormBuilder) {}
 
   ngOnInit() {
 
@@ -65,9 +68,12 @@ register(e){
     const name = this.registerForm.get('name').value;
     const age = this.registerForm.get('age').value;
     const job_id = this.registerForm.get('job_id').value;
+
     const colonist = new Colonist(name, age, job_id);
-     this.colonistService.postData(colonist).subscribe((data) => {
-       this.router.navigate(['encounters'])
+     this.colonistService.postData(colonist).subscribe((newColonist) => {
+           window.localStorage.setItem('colonist_id',
+                                       newColonist.colonist.id);
+       this.router.navigate(['encounters']);
          });
     }
   }
