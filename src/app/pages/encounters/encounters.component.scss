@@ -14,17 +14,21 @@ h1{
   padding:40px 20px;
   font-family:"space_ageregular";
   position:fixed;
+  font-size: 24px;
 }
 
 ul{
-  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%),
-              url("../../../assets/images/encounter.jpg") center right no-repeat fixed;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),
+              url("../../../assets/images/martian.jpg") center right no-repeat fixed;
   width:650px;
   color:white;
-  padding-top:130px;
   list-style-type: none;
+  margin-top:100px;
+  margin-bottom:100px;
 }
-
+.heading{
+  top:0px;
+}
 .report-button{
   bottom:0px;
   background:black;
