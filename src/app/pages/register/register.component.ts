@@ -72,7 +72,7 @@ register(e){
     const colonist = new Colonist(name, age, job_id);
      this.colonistService.postData(colonist).subscribe((newColonist) => {
            window.localStorage.setItem('colonist_id',
-                                       newColonist.colonist.id);
+                            newColonist.colonist.id);
        this.router.navigate(['encounters']);
          });
     }

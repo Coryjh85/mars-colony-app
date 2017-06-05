@@ -67,8 +67,12 @@ $lights: yellow;
   transform:scale(0.3);
   border-radius:50%;
   box-shadow:100px -100px 0 $background, 50px -50px 0 $background, 100px -50px 0 $background, 150px -50px 0 $background, 50px 0 0 $background, 100px 0 0 $background, 150px 0 0 $background, 200px 0 0 $background,-50px 50px 0 $background, 0 50px 0 $background, 50px 50px 0 $background, 100px 50px 0 $background, 150px 50px 0 $background, 200px 50px 0 $background, 250px 50px 0 $background,-100px 100px 0 $background, -50px 100px 0 $background, 0 100px 0 $background, 50px 100px 0 $background, 100px 100px 0 $background, 150px 100px 0 $background, 200px 100px 0 $background, 250px 100px 0 $background, 300px 100px 0 $background, -50px 150px 0 $background, 0 150px 0 $background, 50px 150px 0 $background, 100px 150px 0 $background, 150px 150px 0 $background, 200px 150px 0 $background, 250px 150px 0 $background, 0 200px 0 $background, 50px 200px 0 $background, 100px 200px 0 $background, 150px 200px 0 $background, 200px 200px 0 $background, 50px 250px 0 $background, 100px 250px 0 $background, 150px 250px 0 $background, 100px 300px 0 $background;
-animation: loaderAnim 6s linear infinite;
+  animation: loaderAnim 6s linear infinite;
+}
 
+a{
+  height:50px;
+  width:50px;
 }
 
 body{

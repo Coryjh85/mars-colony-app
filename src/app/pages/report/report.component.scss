@@ -16,3 +16,52 @@ body{
   color:white;
   background:black;
 }
+form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin:100px auto;
+  width:90vw;
+}
+
+textarea{
+  margin:20px auto;
+  border-bottom:red;
+  width:100vw;
+  border:none;
+  background: black;
+  color: red;  
+  width:90vw;
+}
+
+.ng-touched{
+  border:none;  
+}
+
+select{
+  border:none;
+  font-family:"space_ageregular";
+  width:90vw;
+  margin:20px auto;
+  background:black;
+  color:red;
+  border:none;
+}
+
+button{
+  margin:20px auto;
+  width:90vw;
+  font-family:"space_ageregular";
+  border:none;
+  background:black;
+  color:red;
+}
+
+.report-image{
+  margin:30px auto;
+  background:url("../../../assets/images/report-page.jpg");
+  background-size:contain;
+  width:500px;
+  height:300px;
+
+}

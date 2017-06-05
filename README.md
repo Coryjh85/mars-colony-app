@@ -1,3 +1,28 @@
+<img src="./screenshot.jpg>
+
+##About the Mars colony app
+
+The Mars Colony App is a mock colonist registry app for an imaginary mars colony. It also has a section where you can report alien encounters, which add to a database spanning several cohorts.
+
+###Technology Used
+
+  -Angular js
+  -Typescript
+  -Json/Ajax
+  -SCSS
+  -HTML
+  -GitHub for version control
+
+
+###Posting/Getting information using angular, json and html forms.
+
+This project was largely done as a codealong, to a point, we figured out the register page as a group and were left to figure out the more difficult report page. We had to discover how to save info from the register page to local storage, so that the colonist id could be used in the report. This project was useful because we learned first hand how much nicer debugging can be in angular, as it usually points you in the right direction, by giving you the area where the offending code is, and a brief description of what was wrong with it to begin with. 
+
+
+
+
+
+
 # MarsColonyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.6.

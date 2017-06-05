@@ -14,7 +14,13 @@ h1, h3{
   color:red;
   padding-top:60px;
   font-family:"space_ageregular";
-  font-size: 24px;
+}
+h1{
+  font-size:24px;
+}
+
+h3{
+  font-size:20px;
 }
 
 .colonistPic{
@@ -22,9 +28,38 @@ h1, h3{
   height:300px;
   width:500px;
   background:url("../../../assets/images/colonist.jpg")
-
 }
 
 form{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin:100px auto;
 }
+
+input{
+  margin:20px auto;
+  border-bottom:red;
+  width:100vw;
+  border:none;
+  background: black;
+  color: red;
+}
+
+select{
+  font-family:"space_ageregular";
+  width:100vw;
+  margin:20px auto;
+  background:black;
+  color:red;
+  border:none;
+}
+
+button{
+  font-family:"space_ageregular";
+  border:none;
+  background:black;
+  color:red;
+}
+
+

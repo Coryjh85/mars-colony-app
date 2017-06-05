@@ -23,8 +23,8 @@ ul{
   width:650px;
   color:white;
   list-style-type: none;
-  margin-top:100px;
-  margin-bottom:100px;
+  margin-top:110px;
+  margin-bottom:110px;
 }
 .heading{
   top:0px;
@@ -33,4 +33,9 @@ ul{
   bottom:0px;
   background:black;
   z-index: 9999;
+  text-decoration: none;
+}
+
+a:-webkit-any-link{
+  color:red;
 }
