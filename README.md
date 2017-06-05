@@ -1,4 +1,4 @@
-<img src="./screenshot.jpg>
+<img src="./screenshot.jpg">
 
 ##About the Mars colony app
 
